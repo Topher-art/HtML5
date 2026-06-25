@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mi perfil </title>
+    </head>
+
+    <body>
+        <h1>Perfil</h1>
+        <h1>Sobre mi</h1>
+        
+        
+                <!-- hoy aprenderemos a incluir imagenes, audios, videos y tablas !! -->
+                 
+                <!-- ESTA ES LA ESTRUCTURA:
+                
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                
+                -->
+
+              <!-- Para imagenes: usamos la etiqueta: " <img src="" alt="">" -->
+                
+                <!-- "src" es la ruta de la imagen
+                 " alt" es el texto alternativo informativo referente a la imagen
+                 "width=" es el ancho que deseamos darle a la imagen selecionada
+                 height="200" es la altura que deseamos dar a la imagen selecionada  -->
+        
+        <figure>  <!-- esta es la etiqueta para incluir un imagen-->
+            
+            <img src="img\perfilMasc.jpg" alt="Foto de perfil" width="200"> <!-- como vemos, la ruta(src) indica
+                                                                   la localizacion de la imagen en nuestros archivos-->
+            
+            <figcaption>Esta es mi foto de perfil</figcaption>  <!-- "<figcaption>" Permite agregar una descripción -->
+        </figure>
+        <p>Nombre: Christopher Mendez</p>
+        <p>Edad: 33 </p>
+        <h2>Hobies:</h2>
+        <img src="img\correr.jpg" alt=" videojuegos"width="200" height="200"> 
+        <br>
+        <img src="img\gamer.jpg" alt=" videojuegos"width="200">
+        <h2>Un personaje favorito:</h2>
+        <img src="img\link.jpg" alt="Link"> 
+        
+        
+                         <!-- Ahora vamos a incluir un audio!! -->
+
+                    <!-- Usaremos la etiqueta: "<audio controls>"" -->
+                       
+                       
+                        <!-- ESTA ES LA ESTRUCTURA:
+
+                        <audio controls>
+
+                            <source src="aqui colocamos la ruta del archivo" type="aqui es el tipo de audio:mp3/ mpeg">
+
+                        </audio>
+                        
+                        -->
+
+                    <!-- El atributo que va despues de la etiqueta audio("controls")
+                      es para colocar controles de reproduccion como: 'play, stop, volume'-->
+                             
+        <!--!!EJEMPLO!!-->
+
+        <h2>Audio favorito:</h2>
+        
+        <audio controls>
+            
+            <source src="audio\VillaKakariko.mp3."type="audio/mpeg">
+        
+        </audio>
+        
+                        <!-- Ahora vamos a incluir un video!! -->
+
+                         <!-- Usaremos la etiqueta: "<video controls wiwth >" -->
+
+                        <!-- ESTA ES LA ESTRUCTURA:
+
+                        <video controls width="300">
+
+                            <source src="aqui colocamos la ruta del archivo" type="tipo de video(mp4)">
+
+                        </video>
+                        
+                        -->
+                        
+                        <!-- Los atributos que van despues de la etiqueta video ("controls" y "width")
+                      es para colocar controles de reproduccion como: 'play, stop, volume'
+                      y "width" es para dar el ancho deseado del video -->
+        
+        <!--!!EJEMPLO!!-->
+        
+        <h2>Mi video favorito:</h2>
+    
+        <video controls width="700">
+
+            <source src="video\intro zelda OTT.mp4" type="VIDEO/mp4"> 
+        
+        </video>
+
+
+           <!-- Ahora vamos a incluir una tabla!! -->
+            <!-- Usaremos la etiqueta llamada <table> </table>-->
+             <!-- ESTA ES LA ESTRUCTURA:
+              
+             <table>
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+             </table>
+             
+             -->
+
+         
+       
+        <h2>Mis estudios</h2>
+
+        <table>
+               
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>año</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Fullstack desarrollo web</td>
+                    <td> 2026</td>
+                </tr>
+                <tr>
+                    <td>Fundametos de proramacion con python</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                <td>Soporte y mantenimiento de pc y laptos</td>
+                <td>2025</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        </body>
+
+
+    <footer>
+
+        <br><br><br><br>
+
+    </footer>
+
+ 
+
+
+</htmml>
