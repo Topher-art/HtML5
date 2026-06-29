@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+                         <!-- ETIQUETAS SEMÁNTICAS IMPORTANTES!!-->
+    
+    
+    
+    
+     <!-- Facilitan la lectura del sitio web a través de lectores de pantalla, 
+     permitiendo a las personas con discapacidad visual comprender la estructura de la página.
+     -->
+
+
+     <!--
+        <header>: Representa el encabezado de una página o sección (suele incluir el logo o título).
+        <nav>: Define un bloque con enlaces de navegación.
+        <main>: Contiene el contenido central y único de la página web.
+        <section>: Agrupa contenido que comparte una misma temática.
+        <article>: Define contenido independiente y autónomo (como la entrada de un blog o una noticia).
+        <footer>: Representa el pie de página, con información legal, de contacto o enlaces relacionados.-->
+     
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi portafolio</title>
+    </head>
+
+<body>
+
+        <!-- HEADER -->
+        <header>
+
+            <h1>Gloriana Marín</h1>
+    
+            <nav>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+                <button>Iniciar Sesión</button>
+            </nav>
+    
+            <hr>
+    
+        </header>
+        <main>
+            <!-- SOBRE MI -->
+            <section id="sobre-mi">
+
+                <h2>Sobre mí</h2>
+
+                <figure>
+                    <img src="img/perfil.jpg"
+                        alt="Foto de perfil de Gloriana Marín"
+                        width="200">
+
+                    <figcaption>Desarrollador web</figcaption>
+                </figure>
+
+                <p>
+                    Hola, soy estudiante de desarrollo web y me apasiona crear páginas modernas.
+                </p>
+
+            </section>
+            <hr>
+            <!-- HABILIDADES -->
+            <section id="habilidades">
+
+                <h2>Habilidades</h2>
+
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Git y GitHub</li>
+                </ul>
+
+            </section>
+
+            <hr>
+
+            <!-- PROYECTOS -->
+            <section id="proyectos">
+
+                <h2>Proyectos</h2>
+
+                <article>
+
+                    <h3>Página de Restaurante</h3>
+
+                    <p>
+                        Proyecto realizado con HTML semántico.
+                    </p>
+
+                    <img src="img/proyecto1.jpg"
+                        alt="Captura del proyecto restaurante"
+                        width="300">
+
+                </article>
+
+
+            </section>
+
+            <hr>
+
+            <!-- VIDEO -->
+            <section>
+
+                <h2>Video de presentación</h2>
+
+                <iframe width="400"
+                    height="250"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Video de presentación"
+                    allowfullscreen>
+                </iframe>
+
+            </section>
+
+            <hr>
+
+            <!-- TABLA -->
+            <section>
+
+                <h2>Experiencia</h2>
+
+                <table border="1">
+
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Proyecto</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2025</td>
+                            <td>Portafolio Personal</td>
+                        </tr>
+
+                        <tr>
+                            <td>2025</td>
+                            <td>Formulario HTML5</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <hr>
+
+        <!-- FORMULARIO -->
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Información Personal</legend>
+
+                <!-- Nombre -->
+                <label for="nombre">
+                    Nombre:
+                </label>
+
+                <br>
+
+                <input type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre"
+                    required>
+
+                <br><br>
+
+                <!-- Apellido -->
+                <label for="apellido">
+                    Apellido:
+                </label>
+
+                <br>
+
+                <input type="text"
+                    id="apellido"
+                    name="apellido"
+                    placeholder="Ingrese su apellido"
+                    required>
+
+                <br><br>
+
+                <!-- Correo -->
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+
+                <br>
+
+                <input type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="correo@gmail.com"
+                    required>
+
+                <br><br>
+
+                <!-- Teléfono -->
+                <label for="telefono">
+                    Teléfono:
+                </label>
+
+                <br>
+
+                <input type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="3001234567"
+                    required>
+
+                <br><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Información del mensaje</legend>
+
+                <!-- Tipo de consulta -->
+                <label for="tipo">
+                    Tipo de consulta:
+                </label>
+
+                <br>
+
+                <select id="tipo"
+                        name="tipo"
+                        required>
+
+                    <option value="">
+                        Seleccione una opción
+                    </option>
+
+                    <option value="trabajo">
+                        Oferta laboral
+                    </option>
+
+                    <option value="proyecto">
+                        Proyecto web
+                    </option>
+
+                    <option value="soporte">
+                        Soporte técnico
+                    </option>
+
+                    <option value="otro">
+                        Otro
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <!-- Prioridad -->
+                <label>
+                    Prioridad:
+                </label>
+
+                <br>
+
+                <input type="radio"
+                    id="alta"
+                    name="prioridad"
+                    value="alta">
+
+                <label for="alta">
+                    Alta
+                </label>
+
+                <br>
+
+                <input type="radio"
+                    id="media"
+                    name="prioridad"
+                    value="media">
+
+                <label for="media">
+                    Media
+                </label>
+
+                <br>
+
+                <input type="radio"
+                    id="baja"
+                    name="prioridad"
+                    value="baja">
+
+                <label for="baja">
+                    Baja
+                </label>
+
+                <br><br>
+
+                <!-- Mensaje -->
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+
+                <br>
+
+                <textarea id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        cols="30"
+                        placeholder="Escriba su mensaje"
+                        required>
+                </textarea>
+
+                <br><br>
+
+                <!-- Fecha -->
+                <label for="fecha">
+                    Fecha de contacto:
+                </label>
+
+                <br>
+
+                <input type="date"
+                    id="fecha"
+                    name="fecha">
+
+                <br><br>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Botón -->
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+        </main>
+
+        <hr>
+
+
+    <!-- ASIDE -->
+    <aside>
+
+        <h3>Redes sociales</h3>
+
+        <a href="#">GitHub</a><br>
+        <a href="#">LinkedIn</a>
+
+    </aside>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2025 - Mi Portafolio
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
