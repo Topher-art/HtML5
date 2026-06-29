@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+                            <!-- CÓMO CREAR UN FORMULARIO EN HTML-->
+
+
+    <!-- Estructura:
+        
+     <form>
+        <label for="aqui escribimos un detalle">Aqui escribimos el nombre de la solicitud</label>
+            
+        <input id="nombre del id de la solicitud" type="text">
+     </form>
+    -->
+
+    <!--EJEMPLOS-->  
+
+    <head>
+        <title>Agendar cita medica</title>
+    </head>
+    
+    <body> 
+        <h1>Agenda tu cita</h1>
+        <form>
+            <label for="nombre">Nombre</label>  <!-- Este es la solicitud de lo que se solicita en el formulario en este caso es el nombre-->
+
+            <input id="nombre"type= "text" required placeholder="Ana" pattern"{A-Za-z}+> <!-- Éste es el espacio en blanco donde vamos a escribir lo que se solicita -->                  
+            
+            <!-- los términos: "required placeholder=" y "pattern" son VALIDACIONES( procesos 
+             de control que garantizan que el código de una página web cumpla con los estándares
+              oficiales de sintaxis y estructura)-->
+            <br>
+            <br>
+            
+            <label for="apellido">Apellido</label>
+            <input id="apellido"type= "text" required placeholder="lopez" pattern"{A-Za-z}+>
+
+            <!-- Por ejemplo el "required placeholder=" sirve para poner un 'mensaje pista' de lo que se nesecita escribir en la solicitud.
+              Y el "pattern" tiene como función crear la estructura y la sintaxis de la 
+              palabra( si la queremos en mayúscula o todo en minúscula o bien que solo acepete letras o solo números )-->
+            <br>
+            <br>
+            <label for="cedula">Cedula</label>
+            <input id="cedula"type = "number" required placeholder="1-2345-6789" pattern"{^A-Za-z}+>
+    
+            <!-- Hay diferentes tipos de "input" por ejemplo el de numeros: type = "number"
+             o bien el de elecion por punto: type= "radio" solo por mencionar algunos 
+             -->
+            <br>
+            <br>
+            
+            <label>Genero</label>
+            <input type="radio" id="Masculino"name="genero" value="M">
+            <label for="masculino">M</label>
+            <label>Genero</label>
+            <input type="radio" id="femenino"name="genero" value="F">
+            <label for="Femenino">F</label>
+
+            <label>Genero</label>
+            <input type="radio" id="Otro"name="genero" value="O">
+            <label for="otro">O</label>
+            <br><br>
+             <label for="correo">Correo</label>
+            <input id="correo"type = "text" required placeholder="knbn@jbcje.com" pattern"{^A-Za-z}>
+            <br><br>
+            
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha" required>
+           
+            <label for="hora">Hora</label>
+            <input type="time" name="hora" id="hora" required>
+            
+            <br><br>
+            <label for="tipo de consulta">tipo de consulta</label>
+            <select id="tipo de consulta" name="" id=""></select>
+            <br><br>
+
+            <label for="motivo">Motivo de consulta</label>
+            <textarea name="motivo" id="motivo" placeholder="Describa el motivo de su consulta"></textarea>
+
+    
+         </form>
+        
+
+         <button>Agendar tu cita </button>
+        
+        
+        
+    </body>
+</html>
