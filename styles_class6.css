@@ -1,0 +1,143 @@
+  
+                           /* VAMOS A CREAR ESTILO A NUESTRA PAGINA WEB!!!*/
+ 
+ /* La estructura es la siguiente:*/
+
+body{                              /*Tomamos el selector de etiqueta que vamos a realizar el estilo,
+                                       en éste caso es la etiqueta "body" y abrimos llaves*/
+    
+    background-color: white;         /* Color de fondo*/
+    font-family: Arial, sans-serif;    /* Tipo de letra*/ 
+    margin: 0;                         /* Espacio externo*/
+    color:black                      /* Color de letra*/
+}
+
+    
+header{                              /* Hay diferentes opciones de valores de modificaciones que podemos 
+                                        realizar según la etiqueta que queremos modificar*/
+    background-color: #114882;
+    color: white;
+    padding: 25px;                   /* Por ejemplo "padding" sirve para modificar el espacio interno de la palabra*/
+    text-align: center;              /*"text-align" sirve para alinear la palabra,
+                                         en este caso lo alineamos al centro*/ 
+}
+
+h1{
+    font-size: 40px;  /*font-size sirve para establecer el tamaño de cualquier texto o fuente dentro de una página web*/
+    margin-bottom: 15px; /* margin-bottom sirve para establecer el espacio 
+                           o margen exterior en la parte inferior de un elemento*/
+}
+
+/*
+Píxeles (px): Es la medida de tamaño de modificacion que vamos a usar ya sea para espacio y dimenciones.
+*/
+
+nav a{
+    color: white;
+    margin:10px;
+    font-size:20px;
+}
+
+section{
+    background-color: rgb(220, 233, 147);
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid rgb(114, 106, 106);/*border sirve para crear un contorno visible alrededor 
+                                             de un elemento HTML, definiendo su grosor, estilo y color.*/
+
+     border-radius: 10px;                   /*border-radius en CSS sirve para redondear las esquinas*/
+}
+
+h2{
+    color: #114882;
+    margin-bottom: 20px;                    /*sirve para establecer el espacio exterior en la parte inferior*/
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;   /* Esta propiedad sirve para definir la altura total de cada línea de texto,
+                           controlando así el espacio vertical (interlineado)*/
+}
+
+img{
+    border-radius: 10px;
+    border: 3px solid  #114882;
+    margin-top: 10px;                       /*sirve para establecer el espacio exterior en la parte superior*/
+}
+
+figcaption{
+    margin-top: 10px;
+    font-style: italic;
+    color: gray;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th{
+    background-color: #114882;
+    color: white;
+    padding: 12px;
+}
+
+tr{
+    padding: 12px;
+    background-color: #dce0e4;
+}
+
+td{
+    padding: 12px;
+    background-color: #dce0e4;
+}
+
+form{
+    margin-top: 20px;
+}
+
+fieldset{
+    border:2px solid #114882;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+legend{
+    color:#114882;
+    font-weight: bold;
+    padding: 10px;
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(117, 71, 26);
+    background-color: rgb(46, 247, 230);
+    font-size: 15px;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+
+button{
+    background-color:#114882;
+    color:white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+footer{
+    background-color: #114882;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+a {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(10, 10, 66);
+}
