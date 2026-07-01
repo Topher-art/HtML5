@@ -1,0 +1,277 @@
+
+                                        /*_____FLEXBOX: LAYOUTS MODERNOS_____*/
+
+
+/*Flexbox (Flexible Box Layout) es un modelo de diseño de CSS diseñado para organizar 
+elementos en filas o columnas de manera flexible, alineada y adaptable (responsiva) sin importar su tamaño.
+
+Facilita la distribución del espacio y el centrado de elementos.Las propiedades se dividen 
+entre el elemento contenedor (padre) y los elementos internos (hijos).
+
+Estas son algunas de las propiedades que vamos a ver en este css:
+
+    display: flex;: Activa el modo Flexbox en el contenedor.
+
+    flex-direction: Define si los elementos se colocan en fila horizontal o columna vertical. (Valores: row, row-reverse, column, column-reverse).
+
+    flex-wrap: Determina si los elementos se ajustan en una sola línea o saltan a la siguiente si no caben. (Valores: nowrap, wrap).
+
+    justify-content: Alinea y distribuye los elementos a lo largo del eje principal (horizontal por defecto). (Valores: center, flex-start, flex-end, space-between, space-around, space-evenly).
+
+    align-items: Alinea los elementos a lo largo del eje transversal (vertical por defecto). (Valores: center, flex-start, flex-end, stretch, baseline).
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color:black
+}
+
+header{
+    background-color: #114882;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+
+main{
+    margin-top:140px;
+}
+
+.hero{
+    margin-top: 170px;
+    background-image: linear-gradient(to right, pink, rgb(101, 218, 218));
+    color: white;
+    background-size: cover;
+    padding: 80px;
+    
+    display: flex;                 /*"display: flex": Es la más importante, convierte un contenedor normal en uno flex*/
+  
+    justify-content: center;       /*justify-content – Alinea horizontalmente el contenido. 
+                                 ojustify-content: center; justify-content: space-between; justify-content: space-around*/
+   
+    align-items: center;           /*align-items – Alinea verticalmente el contenido.
+                                           oalign-items: center*/
+    flex-direction: column;        /*Sirve para organizar los elementos hijos de un contenedor uno
+                                     debajo del otro (en forma de columna o verticalmente).*/
+}
+
+.tituloHero{
+    color:rgb(191, 145, 234)
+}
+.sobremi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.habilidades{
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+}
+.contenedorProyectos{
+    display: flex;
+    gap: 20px;           /* Separa los elementos 20px tanto horizontal como verticalmente */
+    flex-wrap:true;
+}
+.card{
+    background-color: rgb(236, 231, 226);
+    padding: 20px;
+    border-radius: 10px;
+    flex:1;                /*"Flex: 1": - Todos los elementos ocupan el mismo espacio.*/
+    min-width: 200px;      /*"min-width": sirve para establecer el ancho mínimo que debe tener un elemento*/
+    
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/*
+.navbar{
+    color:white;
+}*/
+
+nav a{
+    
+    color: white;
+    margin:10px;
+    font-size:20px;
+    padding: 10px 15px;
+    background-color: #3c7ce9cc;
+    border-radius: 5px;
+}
+.nav{
+    display:flex;
+    justify-content:center ;
+    gap: 40px ;}
+
+
+nav a:hover{
+    background-image: linear-gradient(to right, pink, rgb(101, 218, 218));
+    color: #3c7ce9cc;
+}
+
+
+/*
+.sticky{
+    position: sticky;
+    background-color: #3c7ce9cc;
+    color: white;
+}*/
+
+.caja{
+    height: 100px;
+    overflow: scroll;
+    
+}
+
+.exp{
+    /*display: none;*/
+   /*visibility: hidden;*/
+}
+
+section{
+    background-color: rgb(248, 233, 210);
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgb(114, 106, 106);
+    border-radius: 30px;
+}
+
+h2{
+    color: #114882;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img{
+    border-radius: 10px;
+    border: 3px solid  #114882;
+    margin-top: 10px;
+}
+
+figcaption{
+    margin-top: 10px;
+    font-style: italic;
+    color: gray;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th{
+    background-color: #114882;
+    color: white;
+    padding: 12px;
+}
+
+tr{
+    padding: 12px;
+    background-color: #dce0e4;
+}
+
+td{
+    padding: 12px;
+    background-color: #dce0e4;
+}
+
+form{
+    margin-top: 20px;
+}
+
+fieldset{
+    border:2px solid #114882;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+legend{
+    color:#114882;
+    font-weight: bold;
+    padding: 10px;
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 242, 229);
+    font-size: 15px;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+
+button{
+    /*background-color:#114882;*/
+    background-image:linear-gradient(to right, pink, rgb(101, 218, 218));
+    color:white;
+    border-radius: 5px;
+    font-size: 16px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ASIDE */
+
+aside{
+
+    background-color: white;
+
+    margin: 30px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border: 1px solid #dcdcdc;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+
+    background-color: #1e3a5f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* HR */
+
+hr{
+
+    border: 1px solid #dcdcdc;
+}
